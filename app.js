@@ -21,7 +21,10 @@ var app = express();
 dotenv.config();
 
 mongoose.set("strictQuery", false);
-const url = "mongodb://127.0.0.1:27017/footballDB";
+// const url = "mongodb://127.0.0.1:27017/footballDB";
+// const url = "mongodb://mongo:27017/footballDB";
+const url = "mongodb://mongo:27017/footballTest";
+// const url = "mongodb+srv://sdn:e1Gc6RA4FRM4iMI9@sdn.hkmti4p.mongodb.net/test";
 const connect = mongoose.connect(url);
 
 // view engine setup
